@@ -1,0 +1,79 @@
+/* ==========HEADER */
+header{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+}
+
+header:after{
+	clear: both;
+}
+
+.header-logo{
+	width: 20%;
+	height: 50px;
+	float: left;
+	background: #ccc;
+}
+/* function */
+.header-function{
+	width: 80%;
+	float: left;
+}
+.header-function ul{
+	line-height: 50px;
+}
+.header-function ul li{
+	padding: 0 10px;
+	float: left;
+}
+
+.header-function ul li a{
+	padding-left:20px;
+	color:#000!important;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/* ==========PAGE */
+#page{
+	margin-top: 50px;
+	width: 100%;
+	position: relative;
+}
+
+#page .container{
+	min-height: 300px;
+	border: solid 1px #000;
+	top:20px;
+}
+/* sidebar */
+#page .page-sidebar{
+	position: absolute;
+	left: -75px;
+	width: 75px;
+	height: 100%;
+	background: #ccc;
+}
+.page-sidebar ul li{
+	height: 75px;
+	line-height: 75px;
+	border-bottom: solid 1px #fff;
+}
+
+/* contents */
+.page-banner{
+	height: 250px;
+	background: #3c9;
+}
+.page-header{
+	height: 50px;
+	background: #2F2D2D;
+}
+
+.page-slidetop{
+	height: 200px;
+	background: #3c9;
+}
