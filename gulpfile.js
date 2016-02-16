@@ -1,19 +1,31 @@
-var gulp = require('gulp');  
-var less = require('gulp-less');  
-var path = require('path');
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    livereload = require('gulp-livereload'),
+    watch = require('gulp-watch');
+    browserSync = require('browser-sync');
 
-gulp.task('less', function () {  
-  return gulp.src('./less/**/*.less')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task('less', function() {
+    gulp.src('public/stylesheets/*.less')
+        .pipe(watch('public/stylesheets/*.less'))
+        .pipe(less())
+        .pipe(gulp.dest('public/stylesheets/'))
+        .pipe(livereload());
 });
 
-gulp.task('watch', function() {  
-  gulp.watch('./less/**/*.less', ['less']);
-});
+gulp.task('default', ['less']);
 
-gulp.task('default', ['less', 'watch'], function() {
 
+gulp.task('browser-sync', function () {
+    var files = [
+        'app/**/*.html',
+        'app/assets/css/**/*.css',
+        'app/assets/imgs/**/*.png',
+        'app/assets/js/**/*.js'
+    ];
+
+    browserSync.init(files, {
+        server: {
+            baseDir: './app'
+        }
+    });
 });

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="../../stylesheets/style.css">
+	<link rel="stylesheet" href="../../stylesheets/center.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<%- include("header"); %>
+
+	<div class="center-about-edit page-body">
+		<div class="wrapper">
+		<!-- tab select -->
+			<div class="tab-select">
+					<label for="tab-1">Tiếng anh thông minh</label>
+					<input type="radio" id="tab-1" name="select-edit" checked="checked" value="tatm">
+					<label for="tab-1">Bài giới thiệu về trung tâm</label>
+					<input id="tab-2" type="radio" name="select-edit" value="intro">
+			</div>
+
+			<!-- edit content -->
+
+			<div class="contents" style="position:relative;">
+				<div class="edit-tatm">
+					<div class="edit-name">
+						<div style="width:85%; border:solid 1px #333; line-height:35px;">
+							<label>Tên trung tâm</label>
+							<input type="text" name="center-name" placeholder="Nhập tên trung tâm(không quá 50 kí tự)">
+						</div>
+						<button class="button-classic">Lưu lại</button>
+					</div>
+					<div class="edit-logo"></div>
+					<div class="edit-cover"></div>
+				</div>
+				<div class="edit-intro">
+					<h2 class="heading">Tạo bài viết giới thiệu về chung tâm</h2>
+					<textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quae dignissimos impedit. Neque, totam qui cupiditate maiores ad velit quis dolorum mollitia, quae provident temporibus odio ipsam iste quaerat vel modi, ullam repudiandae esse quisquam blanditiis. Ad cumque non, velit rem illum perferendis porro consectetur! Quo dolorem similique excepturi quos autem facilis tempore necessitatibus alias reprehenderit, nulla placeat sequi fuga adipisci molestiae nesciunt at a culpa minima quisquam eaque aliquam illo! Placeat, nostrum eius vitae, rerum sed ipsum quibusdam quam non architecto natus! Quasi in error odio eligendi ad ab dolorum laudantium quis minima, sed, repellat eveniet dicta aut, maiores.</textarea>
+					<div class="submit-edit">
+						<button class="button button-cancel">Hủy bỏ</button>
+						<button class="button button-dashed">Cập nhập</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+			<!-- button update -->
+			
+		</div>
+	</div>
+			
+
+	<%- include("footer"); %>		
