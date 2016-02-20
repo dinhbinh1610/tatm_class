@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title><%= title %></title>
+		<link rel="stylesheet" href="../stylesheets/style.css">
+		<link rel="stylesheet" href="../stylesheets/center.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<%- include("header"); %>
+		<div class="list-classes page-body">
+			<div class="breadcumb">
+				<div class="icon-list">
+					<i class="fa fa-bars fa-lg"></i>
+				</div>
+				<div>Danh sách giáo viên trong trung tâm</div>
+				<div class="creat-button">
+					Thêm một giáo viên
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- Them 1 giao vien -->
+
+			<div class="add-class">
+				<h2><strong>Chỉnh sửa giáo viên</strong></h2>
+				<br>
+				<div class="class-cover">
+					<img src="image/center/teacher-photo.png">
+				</div>
+				<div class="teacher-input">
+					<div>
+						<label>
+							<i class="fa fa-credit-card"></i> Id hệ thống
+						</label>
+						<input type="text" name="class-name" id="class-name" value="3923892398293829">
+					</div>
+					<div>
+						<label for="select1">
+							<i class="fa fa-user"></i>
+							Họ và tên
+						</label>
+						<input type="text" name="class-name" id="class-name" value="3923892398293829">
+					</div>
+					<div>
+						<label for="select2">
+							<i class="fa fa-venus-mars"></i>
+							Giới tính
+						</label>
+						<select style="width: 100px;">
+							<option value="Male">Nam</option>
+							<option value="Female">Nữ</option>
+						</select>
+					</div>
+					<div>
+						<label>
+							<i class="fa fa-graduation-cap"></i>
+							Chuyên ngành
+						</label>
+						<input type="checkbox" name="chuyen-nganh" value="Toeic">Toeic
+						<input type="checkbox" name="chuyen-nganh" value="Toeic">IELTS
+						<input type="checkbox" name="chuyen-nganh" value="Toeic">Toeic
+						<input type="checkbox" name="chuyen-nganh" value="Toeic">Giao tiếp
+					</div>
+
+					<div>
+						<label>
+							<i class="fa fa-graduation-cap"></i>
+							Trình độ học vấn
+						</label>
+					<input type="text" name="class-name" placeholder="Link ảnh đại diện">
+					</div>
+
+					<div>
+						<label>
+							<i class="fa fa-map-marker fa-lg"></i>
+								&nbsp;&nbsp;Địa chỉ
+						</label>
+					<input type="text" name="class-name" placeholder="Link ảnh đại diện">
+					</div>
+
+					<div>
+						<label>
+							<i class="fa fa-link"></i>
+							Trang cá nhân
+						</label>
+					<input type="text" name="class-name" placeholder="Link ảnh đại diện">
+					</div>
+					<br>
+					<button class="button button-ok">
+					Lưu lại
+					</button>
+					<button class="button button-cancel">
+					Hủy bỏ
+					</button>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="list-classes">
+				<ul>
+					<li>
+						<img src="image/center/list-class-cover.png" alt="">
+						<div class="teacher-info">
+							<h3 class="link"><strong>Mr. Nguyễn Tuấn Hùng</strong></h3>
+							<p class="font-small">hungtuanokea@gmail.com</p>
+							<br>
+							<div class="teacher-repute">
+								<div>
+									<p>
+									<i class="fa fa-graduation-cap"></i>
+									Chuyên ngành:</p>
+									<p>Toeic, Ielts</p>
+								</div>
+								<div>
+									<p><i class="fa fa-code"></i></i>&nbsp;Trình độ:</p>
+									<p>Giảng viên Tiếng anh</p>
+								</div>
+								<div>
+									<p>
+									<i class="fa fa-star-o"></i>&nbsp;
+									Độ hài lòng:</p>
+									<p>9.85</p>
+								</div>
+							</div>
+							<br>
+							<div class="teacher-link">
+								<div class="button-fb">
+									<i class="fa fa-facebook fa-lg"></i>
+								</div>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>
+							</div>						
+						</div>
+					</li>
+					<li>
+						<img src="image/center/list-class-cover.png" alt="">
+						<div class="teacher-info">
+							<h3 class="link"><strong>Mr. Nguyễn Tuấn Hùng</strong></h3>
+							<p class="font-small">hungtuanokea@gmail.com</p>
+							<br>
+							<div class="teacher-repute">
+								<div>
+									<p>
+									<i class="fa fa-graduation-cap"></i>
+									Chuyên ngành:</p>
+									<p>Toeic, Ielts</p>
+								</div>
+								<div>
+									<p><i class="fa fa-code"></i></i>&nbsp;Trình độ:</p>
+									<p>Giảng viên Tiếng anh</p>
+								</div>
+								<div>
+									<p>
+									<i class="fa fa-star-o"></i>&nbsp;
+									Độ hài lòng:</p>
+									<p>9.85</p>
+								</div>
+							</div>
+							<br>
+							<div class="teacher-link">
+								<div class="button-fb">
+									<i class="fa fa-facebook fa-lg"></i>
+								</div>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>
+							</div>						
+						</div>
+					</li>
+					<li>
+						<img src="image/center/list-class-cover.png" alt="">
+						<div class="teacher-info">
+							<h3 class="link"><strong>Mr. Nguyễn Tuấn Hùng</strong></h3>
+							<p class="font-small">hungtuanokea@gmail.com</p>
+							<br>
+							<div class="teacher-repute">
+								<div>
+									<p>
+									<i class="fa fa-graduation-cap"></i>
+									Chuyên ngành:</p>
+									<p>Toeic, Ielts</p>
+								</div>
+								<div>
+									<p><i class="fa fa-code"></i></i>&nbsp;Trình độ:</p>
+									<p>Giảng viên Tiếng anh</p>
+								</div>
+								<div>
+									<p>
+									<i class="fa fa-star-o"></i>&nbsp;
+									Độ hài lòng:</p>
+									<p>9.85</p>
+								</div>
+							</div>
+							<br>
+							<div class="teacher-link">
+								<div class="button-fb">
+									<i class="fa fa-facebook fa-lg"></i>
+								</div>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>
+							</div>						
+						</div>
+					</li>
+					<li>
+						<img src="image/center/list-class-cover.png" alt="">
+						<div class="teacher-info">
+							<h3 class="link"><strong>Mr. Nguyễn Tuấn Hùng</strong></h3>
+							<p class="font-small">hungtuanokea@gmail.com</p>
+							<br>
+							<div class="teacher-repute">
+								<div>
+									<p>
+									<i class="fa fa-graduation-cap"></i>
+									Chuyên ngành:</p>
+									<p>Toeic, Ielts</p>
+								</div>
+								<div>
+									<p><i class="fa fa-code"></i></i>&nbsp;Trình độ:</p>
+									<p>Giảng viên Tiếng anh</p>
+								</div>
+								<div>
+									<p>
+									<i class="fa fa-star-o"></i>&nbsp;
+									Độ hài lòng:</p>
+									<p>9.85</p>
+								</div>
+							</div>
+							<br>
+							<div class="teacher-link">
+								<div class="button-fb">
+									<i class="fa fa-facebook fa-lg"></i>
+								</div>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>&nbsp;
+								<button class="button-classic">
+									Xem lớp
+								</button>
+							</div>						
+						</div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<%- include("footer"); %>

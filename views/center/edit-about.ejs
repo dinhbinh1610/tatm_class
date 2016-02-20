@@ -16,10 +16,8 @@
 		<div class="wrapper">
 		<!-- tab select -->
 			<div class="tab-select">
-					<label for="tab-1">Tiếng anh thông minh</label>
-					<input type="radio" id="tab-1" name="select-edit" checked="checked" value="tatm">
-					<label for="tab-1">Bài giới thiệu về trung tâm</label>
-					<input id="tab-2" type="radio" name="select-edit" value="intro">
+				<div class="tab-active">Tiếng anh thông minh</div>
+				<div>Bài giới thiệu về trung tâm</div>
 			</div>
 
 			<!-- edit content -->
@@ -27,22 +25,46 @@
 			<div class="contents" style="position:relative;">
 				<div class="edit-tatm">
 					<div class="edit-name">
-						<div style="width:85%; border:solid 1px #333; line-height:35px;">
+						<div>
 							<label>Tên trung tâm</label>
 							<input type="text" name="center-name" placeholder="Nhập tên trung tâm(không quá 50 kí tự)">
 						</div>
-						<button class="button-classic">Lưu lại</button>
+						<button class="button button-ok">Lưu lại</button>
 					</div>
-					<div class="edit-logo"></div>
-					<div class="edit-cover"></div>
+					<div class="divider"></div>
+					<div class="edit-logo">
+						<h3>Chọn logo</h3>
+						<p>Chọn ảnh *.jpg *.png Kích thức không quá 100KB</p>
+						<div class="button-tatm">
+							<div><img src="image/center/logo-tatm.png"></div>
+							<h2 style="font-weight: bolder;">Tiếng anh thông minh</h2>
+						</div>
+						<button class="button button-ok">Upload Ảnh</button>
+						<button class="button button-cancel">Xóa ảnh</button>
+					</div>
+					<div class="divider"></div>
+
+					<div class="edit-cover">
+						<h3>Cập nhập ảnh bìa</h3>
+						<p>Chọn ảnh *.jpg *.png Kích thức không quá 100KB</p>
+						<br>
+						<img src="image/center/about-banner2.png" alt="">
+						<div style="margin:1em;"></div>
+						<button class="button button-ok">Upload Ảnh</button>
+						<button class="button button-cancel">Xóa ảnh</button>
+					</div>
 				</div>
 				<div class="edit-intro">
-					<h2 class="heading">Tạo bài viết giới thiệu về chung tâm</h2>
-					<textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quae dignissimos impedit. Neque, totam qui cupiditate maiores ad velit quis dolorum mollitia, quae provident temporibus odio ipsam iste quaerat vel modi, ullam repudiandae esse quisquam blanditiis. Ad cumque non, velit rem illum perferendis porro consectetur! Quo dolorem similique excepturi quos autem facilis tempore necessitatibus alias reprehenderit, nulla placeat sequi fuga adipisci molestiae nesciunt at a culpa minima quisquam eaque aliquam illo! Placeat, nostrum eius vitae, rerum sed ipsum quibusdam quam non architecto natus! Quasi in error odio eligendi ad ab dolorum laudantium quis minima, sed, repellat eveniet dicta aut, maiores.</textarea>
+					<h2 class="link"><strong>Tạo bài viết giới thiệu về trung tâm</strong></h2>
+					<br>
+					<textarea id="ckeditor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quae dignissimos impedit. Neque, totam qui cupiditate maiores ad velit quis dolorum mollitia, quae provident temporibus odio ipsam iste quaerat vel modi, ullam repudiandae esse quisquam blanditiis. Ad cumque non, velit rem illum perferendis porro consectetur! Quo dolorem similique excepturi quos autem facilis tempore necessitatibus alias reprehenderit, nulla placeat sequi fuga adipisci molestiae nesciunt at a culpa minima quisquam eaque aliquam illo! Placeat, nostrum eius vitae, rerum sed ipsum quibusdam quam non architecto natus! Quasi in error odio eligendi ad ab dolorum laudantium quis minima, sed, repellat eveniet dicta aut, maiores.</textarea>
+					<br>
 					<div class="submit-edit">
 						<button class="button button-cancel">Hủy bỏ</button>
 						<button class="button button-dashed">Cập nhập</button>
 					</div>
+					<br>
+					<br>
 				</div>
 			</div>
 
@@ -54,3 +76,7 @@
 			
 
 	<%- include("footer"); %>		
+	<script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+	<script>
+            CKEDITOR.replace( 'ckeditor' );
+        </script>
